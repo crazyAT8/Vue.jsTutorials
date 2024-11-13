@@ -5,14 +5,17 @@
 </head>
 <body>
 
+  <!-- Message via Text Interpolation -->
   <div id="app">
     {{ message }} <br>
     {{ 'Random number: ' + Math.ceil(Math.random()*6)}}
   </div>
 
+  <!-- Link to Vue -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <script>
+    // Vue Instance
     const app = Vue.createApp({
       data() {
         return {
